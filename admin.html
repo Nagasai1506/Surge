@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Admin Panel – Issue Management</h2>
+
+    <input type="text" id="adminIssueId" placeholder="Enter Issue ID">
+
+    <select id="newStatus">
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Resolved</option>
+    </select>
+
+    <button onclick="updateStatus()">Update Status</button>
+
+    <p id="adminResult"></p>
+
+    <a href="index.html">Back to Employee Page</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
