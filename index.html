@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SURGE | Issue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 style="color: rgb(222, 59, 195);">SURGE Software Solutions</h1>
+    <h2>Internal Issue / Complaint Tracker</h2>
+
+    <form id="issueForm">
+        <input type="text" id="name" placeholder="Employee Name" required>
+        <input type="text" id="empId" placeholder="Employee ID" required>
+
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>IT Support</option>
+            <option>HR</option>
+            <option>Admin</option>
+        </select>
+
+        <textarea id="issue" placeholder="Describe your issue" required></textarea>
+
+        <button type="submit">Submit Issue</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+    <h3>Track Issue Status</h3>
+    <input type="text" id="trackId" placeholder="Enter Issue ID">
+    <button onclick="trackIssue()">Track</button>
+
+    <p id="statusResult"></p>
+
+    <a href="admin.html">Go to Admin Panel</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
