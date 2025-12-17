@@ -10,8 +10,12 @@
 <body>
 
 <div class="container">
-    <h1 style="color:#ea30c1;">SURGE Software Solutions</h1>
-    <h2>Internal Issue / Complaint Tracker</h2>
+    <div class="header">
+    <img src="surge.png" alt="Surge Logo" class="logo">
+    <h1 class="company-name">Surge Software Solutions</h1>
+</div>
+
+<h2>Internal Issue / Complaint Tracker</h2>
    
     <form id="issueForm">
         <input type="text" id="name" placeholder="Employee Name" required>
@@ -32,7 +36,9 @@
     <div id="result" class="result"></div>
 
     <h3>Track Issue Status</h3>
-    <input type="text" id="trackId" placeholder="Enter Issue ID">
+
+    <input type="text" id="trackId" placeholder="Enter Issue ID" onkeydown="handleTrackEnter(event)">
+
     <button onclick="trackIssue()">Track</button>
 
     <div id="statusResult" class="result"></div>
