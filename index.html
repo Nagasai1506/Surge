@@ -8,7 +8,7 @@
 <body>
 
 <div class="container">
-    <h1 style="color: rgb(222, 59, 195);">SURGE Software Solutions</h1>
+    <h1 style="color:#ea30c1;">SURGE Software Solutions</h1>
     <h2>Internal Issue / Complaint Tracker</h2>
 
     <form id="issueForm">
@@ -27,15 +27,15 @@
         <button type="submit">Submit Issue</button>
     </form>
 
-    <div class="result" id="result"></div>
+    <div id="result" class="result"></div>
 
     <h3>Track Issue Status</h3>
     <input type="text" id="trackId" placeholder="Enter Issue ID">
     <button onclick="trackIssue()">Track</button>
 
-    <p id="statusResult"></p>
+    <div id="statusResult" class="result"></div>
 
-    <a href="admin.html">Go to Admin Panel</a>
+    <a href="admin-login.html">Management Login</a>
 </div>
 
 <script src="script.js"></script>
